@@ -60,6 +60,9 @@ function onOpenModal(event) {
         // console.log(`event.code ==`, event.code);
         if (event.code == 'Escape') {
             instance.close();
+            // видалення слухачпод
+            window.removeEventListener('keydown', onEscapeClick);
         }
-     }
+    }
+   
 }
